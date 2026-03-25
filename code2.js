@@ -8,7 +8,7 @@ const specialChars = "~`!@#$%^&*()[]{}:;<>,.?/|+-_=";
 function RandomString(stringSet, numbersStringSet) {
   let result = "";
   for (let i = 0; i < numbersStringSet; i++) {
-    const randomIndex = Math.floor(Math.random() * (stringSet.length)-1);
+    const randomIndex = Math.floor(Math.random() * (stringSet.length - 1));
     result += stringSet[randomIndex];
   }
   return result;
